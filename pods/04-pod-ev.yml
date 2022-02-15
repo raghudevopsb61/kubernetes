@@ -9,11 +9,14 @@ spec:
     env:
       - name: URL
         value: google.com
+      - name: URL2
+        valueFrom:
+          secretKeyRef:
+            name: sample-secret
+            key: URL2
     envFrom:
       - configMapRef:
           name: sample-data
-      - secretkeyRef:
-          name: sample-secret
 ---
 apiVersion: v1
 kind: ConfigMap
@@ -27,7 +30,7 @@ kind: Secret
 metadata:
   name: sample-secret
 data:
-  URL1: ZXhhbXBsZS5jb20K
+  URL2: ZXhhbXBsZS5jb20K
 
 
 
