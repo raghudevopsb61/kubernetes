@@ -28,3 +28,20 @@ spec:
   resources:
     requests:
       storage: 1Gi
+---
+kind: Pod
+apiVersion: v1
+metadata:
+  name: sample8
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+      volumeMounts:
+      - mountPath: "/opt"
+        name: ebs1
+  volumes:
+    - name: ebs1
+      persistentVolumeClaim:
+        claimName: ebs1
+
