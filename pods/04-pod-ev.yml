@@ -12,6 +12,8 @@ spec:
     envFrom:
       - configMapRef:
           name: sample-data
+      - secretKeyRef:
+          name: sample-secret
 ---
 apiVersion: v1
 kind: ConfigMap
@@ -19,6 +21,12 @@ metadata:
   name: sample-data
 data:
   URL1: example.com
-
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: sample-secret
+data:
+  URL1: example.com
 
 
