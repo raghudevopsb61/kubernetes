@@ -22,7 +22,7 @@ apiVersion: v1
 metadata:
   name: ebs1
 spec:
-  storageClassName: aws-gp2
+  #storageClassName: aws-gp2
   accessModes:
     - ReadWriteOnce
   resources:
