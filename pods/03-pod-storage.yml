@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample7
+spec:
+  containers:
+  - image: nginx
+    name: nginx
+    volumeMounts:
+    - mountPath: /opt
+      name: hostpath-volume
+  volumes:
+  - name: hostpath-volume
+    hostPath:
+      # directory location on host
+      path: /opt/opt-data
+      # this field is optional
+      type: Directory
