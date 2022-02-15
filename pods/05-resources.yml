@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: sample9
+  name: sample11
 spec:
   containers:
   - image: nginx
