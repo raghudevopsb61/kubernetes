@@ -9,7 +9,16 @@ spec:
     env:
       - name: URL
         value: google.com
-
+    envFrom:
+      - configMapRef:
+          name: sample-data
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sample-data
+data:
+  URL1: example.com
 
 
 
