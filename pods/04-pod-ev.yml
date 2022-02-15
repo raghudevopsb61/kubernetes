@@ -27,6 +27,7 @@ kind: Secret
 metadata:
   name: sample-secret
 data:
-  URL1: example.com
+  URL1: ZXhhbXBsZS5jb20K
+
 
 
