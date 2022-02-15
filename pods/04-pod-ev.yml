@@ -12,7 +12,7 @@ spec:
     envFrom:
       - configMapRef:
           name: sample-data
-      - secretKeyRef:
+      - secretkeyRef:
           name: sample-secret
 ---
 apiVersion: v1
