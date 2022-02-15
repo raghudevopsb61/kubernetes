@@ -14,3 +14,5 @@ spec:
         memory: "128Mi"
         cpu: "500m"
 
+## 1 cpu = 1000m
+#
