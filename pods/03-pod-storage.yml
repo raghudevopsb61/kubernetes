@@ -16,3 +16,15 @@ spec:
       path: /opt/opt-data
       # this field is optional
       type: Directory
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: ebs1
+spec:
+  storageClassName: aws-gp2
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
