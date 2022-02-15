@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample9
+spec:
+  containers:
+  - image: nginx
+    name: nginx
+    environment:
+      - name: URL
+        value: google.com
+
+
+
+
