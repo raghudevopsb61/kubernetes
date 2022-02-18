@@ -12,6 +12,6 @@ data:
   USER_PORT: 8080
   AMQP_USER: roboshop
   AMQP_PASS: roboshop123
-  CART_ENDPOINT: cart:8080
+  CART_ENDPOINT: "cart:8080"
   DB_HOST: mysql
   REDIS_HOST: redis-master
